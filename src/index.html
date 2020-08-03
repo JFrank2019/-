@@ -6,6 +6,7 @@
   <meta name="viewport"
     content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
   <title>会动的代码</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,57 +15,7 @@
   <div class="circle-wrapper">
     <div class="circle"></div>
   </div>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    .circle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-    }
-
-    .circle::before {
-      content: '';
-      display: block;
-      position: absolute;
-    }
-
-    .circle::after {
-      content: '';
-      display: block;
-      position: absolute;
-    }
-
-    @media(max-width: 500px) {
-      #html::-webkit-scrollbar {
-        width: 0 !important;
-      }
-
-      #html {
-        padding: 10px;
-        height: 50vh;
-        overflow: auto;
-        word-break: break-all;
-      }
-
-      .circle-wrapper {
-        height: 50vh;
-      }
-
-      .circle-wrapper>.circle {
-        position: relative;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
-  </style>
-
-  <script src="./main.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
